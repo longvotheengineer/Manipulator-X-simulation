@@ -1,9 +1,0 @@
-function handle_robot = InitModel(robot_config)    
-    [pos_joint, A_5_0] = ForwardKinematics(0, 0, 0, 0, robot_config);
-
-    x_data = pos_joint(:, 1);
-    y_data = pos_joint(:, 2);
-    z_data = pos_joint(:, 3);
-
-    handle_robot = plot3(robot_config.UIAxes, x_data, y_data, z_data, 'o-b', 'LineWidth', 6, 'MarkerSize', 8); 
-end
