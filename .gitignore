@@ -1,0 +1,56 @@
+# ------------------------------------
+# MATLAB/SIMULINK FILES TO IGNORE
+# ------------------------------------
+
+# MATLAB Autosave/Temporary Files
+*.asv
+*.autosave
+.matlab/
+
+# App Designer Cache/Binary Files
+# The .mlapp is required, but its associated data should be ignored if possible
+# However, appModel.mat is often integral to the mlapp structure and might be needed.
+# For simplicity and standard practice, we typically ignore .mat files unless explicitly needed.
+*.mat
+
+# Simulink/Stateflow/Code Generation Files (common in MATLAB projects)
+*.slx.r20*
+*.slxc
+*.sfx
+*.mdl.r20*
+slprj/
+slproject.info
+autosave/
+codegen/
+hil/
+ert_main.c
+rt_nonfinite.c
+rt_nonfinite.h
+rtwtypes.h
+
+# MATLAB Workspace History and Preferences
+history.m
+.matlab-ide.xml
+.MATLAB
+
+# MEX files (platform-specific compiled C/C++ or Fortran code)
+*.mex*
+*.mexglx
+*.mexa64
+*.mexw32
+*.mexw64
+*.mexmaci
+*.mexmaci64
+
+# ------------------------------------
+# IDE/OS FILES TO IGNORE
+# ------------------------------------
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Visual Studio Code (if used)
+.vscode/
