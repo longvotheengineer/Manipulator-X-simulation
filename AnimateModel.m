@@ -28,7 +28,7 @@ function handle = AnimateModel(theta_A, theta_B, robot_config, model)
     handle_vecx = quiver3(robot_config.UIAxes, vecorg(:,1), vecorg(:,2), vecorg(:,3), vecx(:,1), vecx(:,2), vecx(:,3), 'r', 'LineWidth', 2, 'MaxHeadSize', 0.5);
     handle_vecy = quiver3(robot_config.UIAxes, vecorg(:,1), vecorg(:,2), vecorg(:,3), vecy(:,1), vecy(:,2), vecy(:,3), 'g', 'LineWidth', 2, 'MaxHeadSize', 0.5);
     handle_vecz = quiver3(robot_config.UIAxes, vecorg(:,1), vecorg(:,2), vecorg(:,3), vecz(:,1), vecz(:,2), vecz(:,3), 'b', 'LineWidth', 2, 'MaxHeadSize', 0.5);
-    handle.vec = [handle_vecx, handle_vecy, handle_vecz];
+    handle.vec  = [handle_vecx, handle_vecy, handle_vecz];
 
     if isfield(model, 'vec') && ~isempty(model.vec)
         delete(model.vec);
