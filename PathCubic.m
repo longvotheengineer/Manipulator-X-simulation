@@ -21,6 +21,6 @@ function trajPVA = PathCubic(theta_A, theta_B, T, N)
     a3 = -2*dtheta / T^3;                   
 
     trajPVA.theta = a0 + a1.*t + a2.*(t.^2) + a3.*(t.^3);
-    trajPVA.v = a1 + 2*a2.*t + 3*a3.*(t.^2);
-    trajPVA.a = 2*a2 + 6*a3.*t;
+    trajPVA.v     = a1 + 2*a2.*t + 3*a3.*(t.^2);
+    trajPVA.a     = 2*a2 + 6*a3.*t;
 end
