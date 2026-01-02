@@ -26,7 +26,7 @@ function trajPVA = TrajectoryCubic(px, py, pz, T, N, robot_config)
     trajPVA.v = a1 + 2*a2.*t + 3*a3.*(t.^2);
     trajPVA.a = 2*a2 + 6*a3.*t;
 
-    dist_abs = abs(dp); 
+    dist_abs  = abs(dp); 
     p_max_val = max(abs([p0; pf])); 
     v_max_val = 1.5 * dist_abs / T;
     a_max_val = 6 * dist_abs / (T^2);
