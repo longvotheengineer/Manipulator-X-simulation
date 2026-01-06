@@ -15,6 +15,9 @@ function trajPVA = PathCubic(theta_A, theta_B, T, N)
 
     dtheta = thetaf - theta0;    
 
+    % s(tau) = a0 + a1*tau + a2*tau^2 + a3*tau^3 
+    % where tau = t/T; s(0) = 0; s(1) = 1
+    % s_dot(0) = 0; s_dot(1) = 1
     a0 = theta0;                        
     a1 = [v10 v20 v30 v40];                        
     a2 = 3*dtheta / T^2;                     
